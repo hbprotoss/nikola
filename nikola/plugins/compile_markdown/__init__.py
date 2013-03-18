@@ -75,12 +75,12 @@ class CompileMarkdown(PageCompiler):
                     tags=""):
         with codecs.open(path, "wb+", "utf8") as fd:
             if onefile:
-                fd.write('<!-- \n')
-                fd.write('.. title: {0}\n'.format(title))
-                fd.write('.. slug: {0}\n'.format(slug))
-                fd.write('.. date: {0}\n'.format(date))
-                fd.write('.. tags: {0}\n'.format(tags))
-                fd.write('.. link: \n')
-                fd.write('.. description: \n')
-                fd.write('-->\n\n')
-            fd.write("\nWrite your post here.")
+                fd.write(u'<!-- \n')
+                fd.write(u'.. title: {0}\n'.format(title))
+                fd.write(u'.. slug: {0}\n'.format(slug))
+                fd.write(u'.. date: {0}\n'.format(date))
+                fd.write(u'.. tags: {0}\n'.format(tags))
+                fd.write(u'.. link: \n')
+                fd.write(u'.. description: \n')
+                fd.write(u'-->\n\n')
+            fd.write(u"\nWrite your post here.")
